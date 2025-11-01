@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* ACE Financial Consultancy Design System - Professional & Trustworthy */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 @layer base {
   :root {
@@ -14,52 +14,56 @@
     --ace-purple: 270 75% 35%;
     --ace-orange: 15 90% 55%;
     
-    /* Base Colors */
-    --background: 0 0% 100%;
-    --foreground: 220 85% 15%;
+    /* Base Colors - Unified Futuristic Theme */
+    --background: 220 85% 15%;
+    --foreground: 0 0% 98%;
 
-    /* Card System */
-    --card: 0 0% 100%;
-    --card-foreground: 220 85% 15%;
+    /* Card System - Glassmorphic */
+    --card: 220 85% 18%;
+    --card-foreground: 0 0% 98%;
 
     /* Interactive Elements */
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 85% 15%;
+    --popover: 220 85% 18%;
+    --popover-foreground: 0 0% 98%;
 
-    /* Brand Primary (ACE Dark Blue) */
-    --primary: 220 85% 15%;
-    --primary-foreground: 0 0% 98%;
+    /* Brand Primary (ACE Cyan Glow) */
+    --primary: 195 100% 50%;
+    --primary-foreground: 220 85% 8%;
 
-    /* Brand Secondary (ACE Cyan) */
-    --secondary: 195 100% 96%;
-    --secondary-foreground: 220 85% 15%;
+    /* Brand Secondary (Dark with Cyan) */
+    --secondary: 220 85% 15%;
+    --secondary-foreground: 195 100% 50%;
 
     /* Muted Variants */
-    --muted: 220 20% 96%;
-    --muted-foreground: 220 25% 45%;
+    --muted: 220 25% 18%;
+    --muted-foreground: 220 15% 75%;
 
-    /* Accent (ACE Purple) */
-    --accent: 270 75% 96%;
-    --accent-foreground: 270 75% 15%;
+    /* Accent (ACE Purple Glow) */
+    --accent: 270 75% 35%;
+    --accent-foreground: 0 0% 98%;
 
     /* CTA/Alert (ACE Orange) */
     --destructive: 15 90% 55%;
     --destructive-foreground: 0 0% 98%;
 
-    /* Borders & Inputs */
-    --border: 220 20% 90%;
-    --input: 220 20% 90%;
-    --ring: 220 85% 15%;
+    /* Borders & Inputs - Glowing */
+    --border: 220 85% 20%;
+    --input: 220 85% 15%;
+    --ring: 195 100% 50%;
 
-    /* Professional Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(220 85% 15%) 0%, hsl(270 75% 35%) 100%);
-    --gradient-accent: linear-gradient(90deg, hsl(195 100% 50%) 0%, hsl(270 75% 35%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 20% 98%) 100%);
+    /* Unified Futuristic Gradients - Core Values Style */
+    --gradient-hero: linear-gradient(135deg, hsl(220 85% 15%) 0%, hsl(270 75% 35%) 50%, hsl(220 85% 15%) 100%);
+    --gradient-accent: linear-gradient(90deg, hsl(195 100% 50%) 0%, hsl(270 75% 50%) 100%);
+    --gradient-subtle: linear-gradient(135deg, hsl(220 85% 15%) 0%, hsl(270 75% 35%) 50%, hsl(220 85% 15%) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(220 85% 15%) 0%, hsl(270 75% 35%) 100%);
+    --gradient-glow: linear-gradient(135deg, hsl(220 85% 15%) 0%, hsl(270 75% 35%) 50%, hsl(195 100% 30%) 100%);
 
-    /* Professional Shadows */
-    --shadow-soft: 0 4px 20px -2px hsl(220 85% 15% / 0.08);
-    --shadow-medium: 0 8px 30px -4px hsl(220 85% 15% / 0.12);
-    --shadow-strong: 0 20px 60px -12px hsl(220 85% 15% / 0.25);
+    /* Futuristic Glowing Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(195 100% 50% / 0.15);
+    --shadow-medium: 0 8px 30px -4px hsl(195 100% 50% / 0.25);
+    --shadow-strong: 0 20px 60px -12px hsl(195 100% 50% / 0.4);
+    --shadow-glow-cyan: 0 0 30px hsl(195 100% 50% / 0.5);
+    --shadow-glow-purple: 0 0 30px hsl(270 75% 50% / 0.5);
 
     /* Smooth Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -67,40 +71,40 @@
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 220 85% 15%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-foreground: 0 0% 98%;
 
-    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary: 195 100% 50%;
 
     --sidebar-primary-foreground: 0 0% 98%;
 
-    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent: 220 85% 20%;
 
-    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-accent-foreground: 195 100% 50%;
 
-    --sidebar-border: 220 13% 91%;
+    --sidebar-border: 220 85% 20%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  /* Professional Dark Mode (Optional) */
-  .dark {
-    --background: 220 85% 8%;
-    --foreground: 0 0% 98%;
-    --card: 220 85% 10%;
-    --card-foreground: 0 0% 98%;
-    --primary: 195 100% 50%;
-    --primary-foreground: 220 85% 15%;
-    --secondary: 220 25% 20%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 220 25% 18%;
-    --muted-foreground: 220 15% 65%;
-    --accent: 270 75% 25%;
-    --accent-foreground: 0 0% 98%;
-    --border: 220 25% 20%;
-    --input: 220 25% 20%;
-    --ring: 195 100% 50%;
+  /* Light Mode Override (if needed) */
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 220 85% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 85% 15%;
+    --primary: 220 85% 15%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 195 100% 96%;
+    --secondary-foreground: 220 85% 15%;
+    --muted: 220 20% 96%;
+    --muted-foreground: 220 25% 45%;
+    --accent: 270 75% 96%;
+    --accent-foreground: 270 75% 15%;
+    --border: 220 20% 90%;
+    --input: 220 20% 90%;
+    --ring: 220 85% 15%;
   }
 }
 
@@ -153,5 +157,37 @@
       opacity: 1; 
       transform: translateY(0); 
     }
+  }
+
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 20px hsl(195 100% 50% / 0.3);
+    }
+    50% {
+      box-shadow: 0 0 40px hsl(195 100% 50% / 0.6);
+    }
+  }
+
+  /* Animated Gradient Background */
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradientShift 15s ease infinite;
+  }
+
+  /* Glowing Effect */
+  .glow-effect {
+    animation: glow 3s ease-in-out infinite;
   }
 }
